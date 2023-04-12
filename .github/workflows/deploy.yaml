@@ -25,7 +25,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
-          application_name: docker_test
+          application_name: docker-test
           environment_name: Dockertest-env
           existing_bucket_name: elasticbeanstalk-ap-south-1-160071257600
           region: ap-south-1

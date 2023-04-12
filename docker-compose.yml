@@ -1,18 +1,8 @@
 version: '3'
 services:
-  docker_test:
+  web:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    volumes:
-      # - /usr/app/node_modules   #Commenting this because we are getting permissions issue when running inside multipass
-      - .:/usr/app
-  tests:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - .:/usr/app
-    command: ["npm", "test", "a"]
+      - '80:80'
